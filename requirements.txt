@@ -1,0 +1,5 @@
+pyautogui
+requests
+Pillow
+flask
+waitress

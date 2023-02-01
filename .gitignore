@@ -1,0 +1,6 @@
+venv
+screenshots
+build
+dist
+*.spec
+.idea
