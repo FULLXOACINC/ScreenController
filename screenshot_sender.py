@@ -25,7 +25,7 @@ def send_screenshots(path, server_url, window_sec):
 
         except Exception as e:
             print("Something happened: " + str(e))
-        time.sleep(window_sec + random.randint(0, window_sec))  # wait 20 to 40 minutes
+        time.sleep(window_sec + random.randint(0, window_sec))  # wait window_sec to 2 * window_sec seconds
 
 
 if __name__ == "__main__":
