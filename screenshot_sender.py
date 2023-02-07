@@ -12,6 +12,10 @@ def send_screenshots(path, server_url, window_sec):
         try:
             screenshot = pyautogui.screenshot()
             file_name = path + "/screenshot_" + str(datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S")) + ".png"
+
+            if not os.path.isdir(path):
+                os.mkdir(path)
+
             screenshot.save(file_name)
 
             with open(file_name, "rb") as f:
